@@ -1,0 +1,21 @@
+data;
+
+set PROD := cowbell1 cowbell2;
+set MONTH := month1 month2;
+set Machine:= Machine1 Machine2;
+
+param laborhour: Machine1 Machine2 :=
+  cowbell1          5        2
+  cowbell2          8        3 ; 
+ 
+ 
+param Demand:  Month1     Month2 :=
+  cowbell1       110         180
+  cowbell2       150         120 ;
+  
+param Price:    Month1     Month2 :=
+  cowbell1        56         11  
+  cowbell2        66         31 ;   
+  
+param avail := Month1 600 Month2 600 ;
+ 
